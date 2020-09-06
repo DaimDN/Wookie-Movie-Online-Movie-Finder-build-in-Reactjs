@@ -9,6 +9,7 @@ import {
   } from "react-router-dom";
   import Movieview from './movieview';
   import { Carousel } from 'react-responsive-carousel';
+  import './index.css';
 
 class AdapterModel extends React.Component{
     
@@ -63,7 +64,7 @@ class AdapterModel extends React.Component{
                  </div>
                 <div className="col-xl-8">
                  <h1 className="display-4">
-                 <Link className="nav-link" style={{marginLeft: '-30px', marginTop: '-28px'}} to={value.slug}>{value.title}</Link>
+                 <Link className="nav-link model" style={{marginLeft: '-30px', marginTop: '-28px'}} to={value.slug}>{value.title}</Link>
                    
                  
                  </h1>

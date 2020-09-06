@@ -8,6 +8,8 @@ import {
     Link
   } from "react-router-dom";
 
+  import './index.css';
+
 
   class Movieview extends React.Component{
       constructor(props){
@@ -18,20 +20,20 @@ import {
           
         return  (
             
-            <div className="container ">                
+            <div className="container model-y">                
                    
                 <div className="jumbotron bg-light fixed-top  " style={{boxShadow: '0 0 60px 20px #fff', marginTop: '-60px'}} >
-                <div className="mx-auto pull-left"><a href="/" className="btn btn-primary ml-auto">Back to Home</a></div>
+                <div className="mx-auto top pull-left"><a href="/" className="btn btn-primary ml-auto">Back to Home</a></div>
                 
                 <br/><br/>
                 <div className="row">
 
-                <div className="col-xl-3 "> 
-                <img className="img-fluid" style={{height: '60%'}} src={this.props.poster}/> 
+                <div className="col-xl-3 col-xm-6 col-md-6 col-sm-6 "> 
+                <img className="img-fluid img-media" style={{height: '60%'}} src={this.props.poster}/> 
                  </div>
-                <div className="col-xl-9">
+                <div className="col-xl-9 col-xl-9 col-xm-6 col-md-6 col-sm-6">
                  <h1 className="display-4">
-                 <a href={this.props.slug} style={{marginLeft: '-30px', marginTop: '-28px'}} className="nav-link">{this.props.Title}</a>
+                 <a href={this.props.slug} style={{marginLeft: '-30px', marginTop: '-28px'}} className="nav-link mobile-d">{this.props.Title}</a>
                  
                  </h1>
                  
